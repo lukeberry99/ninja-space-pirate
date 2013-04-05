@@ -26,6 +26,7 @@ public class Board extends JPanel implements ActionListener, Commons{
     private List<Bullet> bulletList = new ArrayList<Bullet>();
 
     private boolean gameStart = false;
+    private boolean debugMode = false;
 
     private Timer timer;
 
@@ -59,6 +60,7 @@ public class Board extends JPanel implements ActionListener, Commons{
 
     public void debugGame() {
         gameStart = true;
+        debugMode = true;
         thePlayer.setSpeed(1);
         enemiesList.clear();
         bulletList.clear();

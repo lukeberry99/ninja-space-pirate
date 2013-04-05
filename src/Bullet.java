@@ -19,6 +19,14 @@ public class Bullet extends Sprite implements Commons {
         setVisible(false);
     }
 
+    public void destroy() {
+        this.setVisible(false);
+        this.moving = false;
+        this.setX(-100);
+        this.setY(-100);
+        this.hit = true;
+    }
+
     public void fire() {
         if(isFired && moving) {
             setVisible(true);

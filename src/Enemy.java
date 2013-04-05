@@ -1,7 +1,7 @@
 import javax.swing.ImageIcon;
 
 public class Enemy extends Sprite implements Commons {
-    public static final int HEIGHT = 60;
+    public static final int HEIGHT = 30;
     public static final int WIDTH = 10;
 
     private int SPEED = 1;
@@ -53,17 +53,14 @@ public class Enemy extends Sprite implements Commons {
     }
 
     public void ifHit(Bullet theBullet) {
-        int inX = theBullet.getX();
-        int inY = theBullet.getY();
 
-        if(inY > y && inY <= y + HEIGHT) {
-            if(inX > x && inX <= x + WIDTH) {
-                die();
-                theBullet.setVisible(false);
-                theBullet.moving = false;
-                theBullet.setX(-100);
-                theBullet.setY(-100);
-                theBullet.hit = true;
+        int bullX = theBullet.getX();
+        int bullY = theBullet.getY();
+
+        if(bullY > this.y && bullY <= (this.y+this.HEIGHT)) {
+            if(bullX > this.x && bullX <= (this.x+this.WIDTH)) {
+                this.die();
+                theBullet.destroy();
             }
         }
     }
