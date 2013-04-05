@@ -7,18 +7,26 @@ Welcome to Ninja Space Pirate.  The basis of the game is simple.  You’re a Nin
 
 The graphics currently aren’t at a stage where you resemble a Ninja, or they resemble Pirates, but they’ll get there eventually.
 
-## How to Install
+## How to install
 
-* Clone the repo
-* Compile SpaceGame.java from the command line
+You can either compile from the source using the instructions below, or download the latest stable jar from the files page.
+
+Clone the repo using  
 ```
+$ git clone https://github.com/Exoflux/ninja-space-pirate.git
+```
+Move into the src folder and compile *SpaceGame.java*  
+```
+$ cd ninja-space-pirate/src
 $ javac SpaceGame.java
 ```
+You shouldn't encounter any problems.
+
 ## Todo
-- [ ] Fix bullet collision
-- [ ] Add a health system
-- [ ] Make the enemies fire back
-- [ ] Animations
-- [ ] Better graphics
-- [ ] Menu system
-- [x] Game is restartable
+- Fix bullet collision
+- Add a health system
+- Make the enemies fire back
+- Animations
+- Better graphics
+- Menu system
+- ~~Game is restartable~~
