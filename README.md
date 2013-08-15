@@ -1,6 +1,6 @@
 #ninja-space-pirate
 ==================
-![SpaceGame](http://localhostr.com/file/930/tq6Md6HRxZL8/Screen-Shot-2013-04-05-at-01.44.35.png) 
+![SpaceGame](https://hostr.co/file/tq6Md6HRxZL8/Screen-Shot-2013-04-05-at-01.44.35.png) 
 
 My first attempt at any sort of game in Java.
 
